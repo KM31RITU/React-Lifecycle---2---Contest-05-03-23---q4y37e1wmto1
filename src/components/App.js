@@ -12,10 +12,10 @@ class App extends React.Component {
     super(props)
     this.state = {count:0}
     this.handleClick = this.handleClick.bind(this);
-
   }
-
-
+componentDidMount(){
+  console.log("mounted");
+}
   
   render() {
     console.log('rendered')
@@ -30,6 +30,3 @@ class App extends React.Component {
 
 
 export default App;
-componentDidMount(){
-  console.log("mounted");
-}
